@@ -1,10 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jenny Lee</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:#ffffff;
+color:#222;
+padding:60px 24px;
+
+}
+
+.container{
+
+max-width:1100px;
+margin:auto;
+
+}
+
+.hero{
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:70px;
+flex-wrap:wrap;
+
+}
+
+.photo{
+
+flex:1;
+min-width:280px;
+display:flex;
+justify-content:center;
+
+}
+
+.photo img{
+
+width:340px;
+height:340px;
+object-fit:cover;
+border-radius:24px;
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.content{
+
+flex:1;
+min-width:300px;
+
+}
+
+h1{
+
+font-size:56px;
+font-weight:700;
+line-height:1.05;
+margin-bottom:18px;
+
+}
+
+h2{
+
+font-size:24px;
+font-weight:500;
+margin-bottom:28px;
+color:#555;
+
+}
+
+p{
+
+font-size:18px;
+line-height:1.8;
+margin-bottom:40px;
+max-width:520px;
+
+}
+
+.buttons{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+
+}
+
+.buttons a{
+
+text-decoration:none;
+text-align:center;
+
+padding:18px;
+
+border-radius:18px;
+
+font-size:18px;
+font-weight:600;
+
+background:#111;
+color:white;
+
+transition:.25s ease;
+
+}
+
+.buttons a:hover{
+
+transform:translateY(-3px);
+
+background:#444;
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+.content{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+}
+
+h1{
+
+font-size:42px;
+
+}
+
+.buttons{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.buttons{
+
+grid-template-columns:1fr;
+
+}
+
+.photo img{
+
+width:280px;
+height:280px;
+
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
-    <h1>Welcome!</h1>
-    <p>This is my first GitHub Pages website.</p>
+
+<div class="container">
+
+<section class="hero">
+
+<div class="photo">
+
+<img src="your-photo.jpg" alt="Portrait of Jenny Lee">
+
+</div>
+
+<div class="content">
+
+<h1>Hello, I'm Jenny.</h1>
+
+<h2>Learning Experience Designer</h2>
+
+<p>
+
+I design meaningful learning experiences that combine empathy,
+accessibility, and creativity. My work spans higher education,
+instructional design, UX, and educational media with a focus on
+helping people learn confidently and effectively.
+
+</p>
+
+<div class="buttons">
+
+<a href="#">Portfolio</a>
+
+<a href="#">LinkedIn</a>
+
+<a href="#">Resume</a>
+
+<a href="#">Visit My Wix Site</a>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
 </body>
 </html>
