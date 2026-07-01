@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -10,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -23,15 +24,18 @@ box-sizing:border-box;
 body{
 
 font-family:'Poppins',sans-serif;
-background:#ffffff;
+
+background:#FCFCFC;
+
 color:#222;
-padding:60px 24px;
+
+padding:80px 30px;
 
 }
 
 .container{
 
-max-width:1100px;
+max-width:1200px;
 margin:auto;
 
 }
@@ -39,9 +43,13 @@ margin:auto;
 .hero{
 
 display:flex;
+
 align-items:center;
+
 justify-content:center;
-gap:70px;
+
+gap:90px;
+
 flex-wrap:wrap;
 
 }
@@ -49,136 +57,205 @@ flex-wrap:wrap;
 .photo{
 
 flex:1;
-min-width:280px;
 display:flex;
 justify-content:center;
+min-width:320px;
 
 }
 
 .photo img{
 
-width:340px;
-height:340px;
+width:380px;
+height:380px;
+
 object-fit:cover;
-border-radius:24px;
+
+border-radius:32px;
 
 box-shadow:
-0 20px 50px rgba(0,0,0,.08);
+0 25px 55px rgba(0,0,0,.08);
 
 }
 
 .content{
 
 flex:1;
-min-width:300px;
+
+min-width:340px;
+
+}
+
+.small-heading{
+
+font-size:16px;
+
+font-weight:500;
+
+letter-spacing:1px;
+
+text-transform:uppercase;
+
+color:#888;
+
+margin-bottom:18px;
 
 }
 
 h1{
 
-font-size:56px;
-font-weight:700;
+font-size:64px;
+
 line-height:1.05;
-margin-bottom:18px;
+
+font-weight:700;
+
+margin-bottom:12px;
 
 }
 
 h2{
 
-font-size:24px;
+font-size:26px;
+
 font-weight:500;
-margin-bottom:28px;
-color:#555;
+
+color:#666;
+
+margin-bottom:30px;
 
 }
 
 p{
 
-font-size:18px;
-line-height:1.8;
-margin-bottom:40px;
-max-width:520px;
+font-size:20px;
+
+font-weight:200;
+
+line-height:1.9;
+
+color:#444;
+
+max-width:600px;
+
+margin-bottom:50px;
 
 }
 
 .buttons{
 
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:18px;
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
 
 }
 
-.buttons a{
+.button-card{
+
+width:220px;
+
+padding:22px;
+
+background:white;
+
+border-radius:22px;
+
+border:1px solid #ECECEC;
 
 text-decoration:none;
-text-align:center;
-
-padding:18px;
-
-border-radius:18px;
-
-font-size:18px;
-font-weight:600;
-
-background:#111;
-color:white;
 
 transition:.25s ease;
 
+box-shadow:
+0 10px 28px rgba(0,0,0,.04);
+
 }
 
-.buttons a:hover{
+.button-card:hover{
 
-transform:translateY(-3px);
+transform:translateY(-6px);
 
-background:#444;
+box-shadow:
+0 22px 45px rgba(0,0,0,.10);
+
+border-color:#DDDDDD;
+
+}
+
+.button-title{
+
+display:block;
+
+font-size:18px;
+
+font-weight:600;
+
+color:#111;
+
+margin-bottom:8px;
+
+}
+
+.button-subtitle{
+
+display:block;
+
+font-size:14px;
+
+font-weight:300;
+
+color:#777;
+
+line-height:1.5;
 
 }
 
 @media(max-width:900px){
 
+body{
+
+padding:50px 20px;
+
+}
+
 .hero{
 
 flex-direction:column;
-text-align:center;
+
+gap:50px;
 
 }
 
 .content{
 
+text-align:center;
+
 display:flex;
+
 flex-direction:column;
+
 align-items:center;
 
 }
 
 h1{
 
-font-size:42px;
-
-}
-
-.buttons{
-
-width:100%;
-
-}
-
-}
-
-@media(max-width:600px){
-
-.buttons{
-
-grid-template-columns:1fr;
+font-size:48px;
 
 }
 
 .photo img{
 
-width:280px;
-height:280px;
+width:300px;
+
+height:300px;
+
+}
+
+.buttons{
+
+justify-content:center;
 
 }
 
@@ -196,32 +273,93 @@ height:280px;
 
 <div class="photo">
 
-<img src="your-photo.jpg" alt="Portrait of Jenny Lee">
+<img src="profile.jpg" alt="Portrait of Jenny Lee">
 
 </div>
 
 <div class="content">
 
-<h1>Hello, I'm Jenny.</h1>
+<div class="small-heading">
 
-<h2>Learning Experience Designer</h2>
+LEARNING EXPERIENCE DESIGNER
+
+</div>
+
+<h1>
+
+Designing<br>
+with Empathy<br>
+& Joy
+
+</h1>
+
+<h2>
+
+Hi, I'm Jenny.
+
+</h2>
 
 <p>
 
-I design meaningful learning experiences that combine empathy,
-accessibility, and creativity. My work spans higher education,
-instructional design, UX, and educational media with a focus on
-helping people learn confidently and effectively. 
+I design meaningful learning experiences that combine empathy, accessibility, and creativity. My work spans higher education, instructional design, UX, and educational media with a focus on helping people learn confidently and effectively.
 
 </p>
 
 <div class="buttons">
 
-<a href="#">Portfolio</a>
+<a class="button-card"
+href="https://YOURPORTFOLIOURL.com"
+target="_blank">
 
-<a href="#">LinkedIn</a>
+<span class="button-title">
 
-<a href="#">Resume</a>
+Explore My Work
+
+</span>
+
+<span class="button-subtitle">
+
+Featured projects and case studies
+
+</span>
+
+</a>
+
+<a class="button-card"
+href="https://YOURRESUMEURL.com"
+target="_blank">
+
+<span class="button-title">
+
+View Resume
+
+</span>
+
+<span class="button-subtitle">
+
+Experience, education, and skills
+
+</span>
+
+</a>
+
+<a class="button-card"
+href="https://linkedin.com/in/YOURPROFILE"
+target="_blank">
+
+<span class="button-title">
+
+Connect on LinkedIn
+
+</span>
+
+<span class="button-subtitle">
+
+Let's stay connected
+
+</span>
+
+</a>
 
 </div>
 
@@ -232,4 +370,5 @@ helping people learn confidently and effectively.
 </div>
 
 </body>
+
 </html>
