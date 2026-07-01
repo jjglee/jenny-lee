@@ -24,19 +24,24 @@ box-sizing:border-box;
 body{
 
 font-family:'Poppins',sans-serif;
-
 background:#FCFCFC;
-
 color:#222;
-
-padding:80px 30px;
 
 }
 
 .container{
 
 max-width:1200px;
+
 margin:auto;
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+padding:60px 40px;
 
 }
 
@@ -46,34 +51,11 @@ display:flex;
 
 align-items:center;
 
-justify-content:center;
+justify-content:space-between;
 
 gap:90px;
 
-flex-wrap:wrap;
-
-}
-
-.photo{
-
-flex:1;
-display:flex;
-justify-content:center;
-min-width:320px;
-
-}
-
-.photo img{
-
-width:380px;
-height:380px;
-
-object-fit:cover;
-
-border-radius:32px;
-
-box-shadow:
-0 25px 55px rgba(0,0,0,.08);
+width:100%;
 
 }
 
@@ -81,33 +63,42 @@ box-shadow:
 
 flex:1;
 
-min-width:340px;
+max-width:700px;
 
 }
 
-.small-heading{
+.photo{
 
-font-size:16px;
+flex:1;
 
-font-weight:500;
+display:flex;
 
-letter-spacing:1px;
+justify-content:center;
 
-text-transform:uppercase;
+}
 
-color:#888;
+.photo img{
 
-margin-bottom:18px;
+width:390px;
+
+height:390px;
+
+object-fit:cover;
+
+border-radius:32px;
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.08);
 
 }
 
 h1{
 
-font-size:64px;
-
-line-height:1.05;
+font-size:72px;
 
 font-weight:700;
+
+letter-spacing:-2px;
 
 margin-bottom:12px;
 
@@ -133,31 +124,37 @@ font-weight:200;
 
 line-height:1.9;
 
-color:#444;
+color:#555;
 
-max-width:600px;
-
-margin-bottom:50px;
+margin-bottom:45px;
 
 }
 
 .buttons{
 
-display:flex;
+display:grid;
 
-gap:20px;
+grid-template-columns:repeat(3,1fr);
 
-flex-wrap:wrap;
+gap:18px;
+
+width:100%;
 
 }
 
 .button-card{
 
-width:220px;
+display:flex;
 
-padding:22px;
+flex-direction:column;
 
-background:white;
+justify-content:center;
+
+align-items:flex-start;
+
+padding:24px;
+
+background:#fff;
 
 border-radius:22px;
 
@@ -167,8 +164,9 @@ text-decoration:none;
 
 transition:.25s ease;
 
-box-shadow:
-0 10px 28px rgba(0,0,0,.04);
+box-shadow:0 10px 30px rgba(0,0,0,.03);
+
+min-height:115px;
 
 }
 
@@ -176,16 +174,13 @@ box-shadow:
 
 transform:translateY(-6px);
 
-box-shadow:
-0 22px 45px rgba(0,0,0,.10);
+box-shadow:0 22px 45px rgba(0,0,0,.08);
 
-border-color:#DDDDDD;
+border-color:#D8D8D8;
 
 }
 
 .button-title{
-
-display:block;
 
 font-size:18px;
 
@@ -199,8 +194,6 @@ margin-bottom:8px;
 
 .button-subtitle{
 
-display:block;
-
 font-size:14px;
 
 font-weight:300;
@@ -211,17 +204,13 @@ line-height:1.5;
 
 }
 
-@media(max-width:900px){
-
-body{
-
-padding:50px 20px;
-
-}
+@media(max-width:1000px){
 
 .hero{
 
-flex-direction:column;
+flex-direction:column-reverse;
+
+text-align:center;
 
 gap:50px;
 
@@ -229,19 +218,7 @@ gap:50px;
 
 .content{
 
-text-align:center;
-
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-}
-
-h1{
-
-font-size:48px;
+max-width:100%;
 
 }
 
@@ -255,7 +232,13 @@ height:300px;
 
 .buttons{
 
-justify-content:center;
+grid-template-columns:1fr;
+
+}
+
+.button-card{
+
+align-items:center;
 
 }
 
@@ -269,39 +252,17 @@ justify-content:center;
 
 <div class="container">
 
-<section class="hero">
-
-<div class="photo">
-
-<img src="profile.jpg" alt="Portrait of Jenny Lee">
-
-</div>
+<div class="hero">
 
 <div class="content">
 
-<div class="small-heading">
+<h1>Jenny Lee</h1>
 
-LEARNING EXPERIENCE DESIGNER
-
-</div>
-
-<h1>
-
-Designing<br>
-with Empathy<br>
-& Joy
-
-</h1>
-
-<h2>
-
-Hi, I'm Jenny.
-
-</h2>
+<h2>Learning Experience Designer</h2>
 
 <p>
 
-I design meaningful learning experiences that combine empathy, accessibility, and creativity. My work spans higher education, instructional design, UX, and educational media with a focus on helping people learn confidently and effectively.
+I'm Jenny Lee, a Learning Experience Designer who creates accessible, engaging, and evidence-informed learning experiences. Whether you're here to explore my portfolio, review my résumé, or connect professionally, you're in the right place.
 
 </p>
 
@@ -312,15 +273,11 @@ href="https://YOURPORTFOLIOURL.com"
 target="_blank">
 
 <span class="button-title">
-
 Explore My Work
-
 </span>
 
 <span class="button-subtitle">
-
-Featured projects and case studies
-
+Featured projects & case studies
 </span>
 
 </a>
@@ -330,15 +287,11 @@ href="https://YOURRESUMEURL.com"
 target="_blank">
 
 <span class="button-title">
-
 View Resume
-
 </span>
 
 <span class="button-subtitle">
-
-Experience, education, and skills
-
+Experience, education & skills
 </span>
 
 </a>
@@ -348,15 +301,11 @@ href="https://linkedin.com/in/YOURPROFILE"
 target="_blank">
 
 <span class="button-title">
-
 Connect on LinkedIn
-
 </span>
 
 <span class="button-subtitle">
-
 Let's stay connected
-
 </span>
 
 </a>
@@ -365,10 +314,17 @@ Let's stay connected
 
 </div>
 
-</section>
+<div class="photo">
+
+<img src="profile.jpg" alt="Portrait of Jenny Lee">
+
+</div>
+
+</div>
 
 </div>
 
 </body>
 
 </html>
+
